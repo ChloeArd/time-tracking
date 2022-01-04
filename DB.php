@@ -1,6 +1,6 @@
 <?php
 
-namespace Chloe\Portfolio\Model;
+namespace Chloe\Timetracking;
 
 use PDO;
 use PDOException;

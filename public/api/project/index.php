@@ -1,6 +1,6 @@
 <?php
 
-use Chloe\Portfolio\Model\DB;
+use Chloe\Timetracking\DB;
 
 session_start();
 require_once '../../../DB.php';
