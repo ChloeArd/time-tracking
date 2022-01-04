@@ -14,28 +14,11 @@ session_start();
 <body>
     <main>
         <h1 class="center">Time Tracking <i class="far fa-clock"></i></h1>
-        <?php
-        if (isset($_SESSION['id'])) { ?>
-                <h3 class="center hello">Bonjour <?=$_SESSION['firstname'] ?> !</h3>
             <div class="border flexRow align">
                 <p class="question">Voulez-vous ajoutez un projet ?</p>
                 <a href="View/addProject.php" class="addProject align"><i class="fas fa-plus-square"></i> Projet</a>
             </div>
-            <a href="./build/php/disconnection.php" id="disconnection" class="center">Déconnexion</a>
             <div id="projectsHome" class="flexCenter flexRow wrap"></div>
-        <?php
-        }
-        else { ?>
-            <div class="accountUser flexCenter flexColumn">
-                <p>Connectez-vous ou inscrivez-vous !</p>
-                <div class="flexRow">
-                    <a class="buttonOrange" href="View/registration.php">Inscription</a>
-                    <a class="buttonOrange" href="View/connection.php">Connexion</a>
-                </div>
-
-            </div>
-        <?php
-        } ?>
     </main>
 </body>
 </html>
