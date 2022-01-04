@@ -7,14 +7,22 @@ namespace Composer\Autoload;
 class ComposerStaticInit20859e317ec7a9240e595a780a3fcc2f
 {
     public static $prefixLengthsPsr4 = array (
+        'R' => 
+        array (
+            'RedBeanPHP\\' => 11,
+        ),
         'C' => 
         array (
-            'Chloe\\TimeTracking\\' => 19,
+            'Chloe\\Timetracking\\' => 19,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Chloe\\TimeTracking\\' => 
+        'RedBeanPHP\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/gabordemooij/redbean/RedBeanPHP',
+        ),
+        'Chloe\\Timetracking\\' => 
         array (
             0 => __DIR__ . '/../..' . '/source',
         ),

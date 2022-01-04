@@ -13,7 +13,7 @@ module.exports = (env, argv) => {
             filename: "build/js/[name].js",
             publicPath: "/",
             clean: {
-                keep: /index\.html|index\.php|View|css|api/,
+                keep: /index\.html|index\.php|View|css|api|php/,
             },
         },
 
@@ -98,7 +98,11 @@ function prodConfig() {
                         exclude: ['/assets/specs']
                     }
                 },
-
+                {
+                    test: /\.tsx?$/,
+                    use: 'ts-loader',
+                    exclude: /node_modules/,
+                },
             ]
         },
 

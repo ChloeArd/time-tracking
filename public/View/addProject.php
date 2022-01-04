@@ -29,7 +29,7 @@
 
 <?php
 
-use Chloe\Timetracking\DB;
+use Chloe\Portfolio\Model\DB;
 require "../../DB.php";
 $bdd = DB::getInstance();
 
