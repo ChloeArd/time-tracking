@@ -15,9 +15,7 @@ export class Project {
         let xhr: XMLHttpRequest = new XMLHttpRequest();
         xhr.onload = function () {
             let response: string = xhr.responseText;
-            console.log(response);
             let json: any = JSON.parse(response);
-            console.log(json[1].properties.name);
 
             for (let i = 0; i < json.length; i++) {
                 let projects = document.getElementById("projectsHome") as HTMLDivElement;

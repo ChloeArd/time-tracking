@@ -178,6 +178,7 @@ export class List {
                             xhr3.open('PUT', './../api/project');
                             xhr3.setRequestHeader('Content-Type', 'application/json');
                             xhr3.send(JSON.stringify(data3));
+                            break;
                         }
                     else {
                             let xhr: XMLHttpRequest = new XMLHttpRequest();
